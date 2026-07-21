@@ -8,6 +8,8 @@ export const metadata: Metadata = {
 };
 
 const gallery = [
+  { src: "/images/space-social.webp", alt: "Sân quán đông khách buổi tối tại Bia hơi Ngọc Tú", title: "Tối nào cũng vui", caption: "Ghế vàng kín bàn, đèn lồng sáng rực — cái không khí chỉ có ở Ngọc Tú." },
+  { src: "/images/hero-night.webp", alt: "Nhóm bạn ngồi nhậu ban đêm tại Bia hơi Ngọc Tú", title: "Hội bạn tụ về", caption: "Câu chuyện dài hơn khi sân thoáng và bia còn đầy cốc." },
   { src: "/images/hero-ngoc-tu-v3.webp", alt: "Hai cốc bia mát trong sân quán", title: "Bia vừa rót", caption: "Cốc lạnh đặt xuống bàn, chờ người bạn đối diện nâng lên." },
   { src: "/images/cau-chuyen-v3.webp", alt: "Lối vào quán khi chiều xuống", title: "Quán chờ khách", caption: "Khoảng sân lên đèn, bàn ghế sẵn sàng cho cuộc hẹn tối." },
   { src: "/images/dat-ban-v3.webp", alt: "Nhóm bạn cụng bia tại quán", title: "Bàn đang vui", caption: "Câu chuyện rôm rả hơn sau một tiếng cụng cốc." },

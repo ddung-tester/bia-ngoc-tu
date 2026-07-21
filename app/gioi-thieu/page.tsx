@@ -16,8 +16,8 @@ export default function AboutPage() {
         title="Bia hơi"
         accent="Ngọc Tú."
         description="Một quán bia sân vườn để người quen ghé lại, người lạ ngồi một lúc rồi cũng thành quen."
-        image="/images/cau-chuyen-v3.webp"
-        imageAlt="Lối vào Bia hơi Ngọc Tú khi chiều vừa xuống"
+        image="/images/hero-night.webp"
+        imageAlt="Không gian Bia hơi Ngọc Tú đêm đèn sáng, khách đông vui"
       />
 
       <section className="story-grid content-pad">
@@ -49,7 +49,7 @@ export default function AboutPage() {
           <Link className="button button-primary" href="/dat-ban">Giữ một bàn <span>→</span></Link>
         </div>
         <div className="image-story-photo">
-          <Image src="/images/dat-ban-v3.webp" alt="Nhóm bạn cụng bia tại Bia hơi Ngọc Tú" fill sizes="(max-width: 850px) 100vw, 60vw" />
+          <Image src="/images/space-social.webp" alt="Sân quán đông khách, đèn lồng sáng rực tại Bia hơi Ngọc Tú" fill sizes="(max-width: 850px) 100vw, 60vw" />
         </div>
       </section>
     </>
