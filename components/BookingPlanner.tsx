@@ -17,8 +17,13 @@ export function BookingPlanner() {
     const guests = String(data.get("guests") || "");
     const note = String(data.get("note") || "").trim();
 
+    // Format ngày DD/MM/YYYY cho dễ đọc
+    const dateFormatted = date
+      ? new Date(date).toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit", year: "numeric" })
+      : "";
+
     setMessage(
-      `Chào Bia hơi Ngọc Tú, mình là ${name}. Mình muốn giữ bàn cho ${guests} người lúc ${time}, ngày ${date}. Số liên hệ: ${phone}.${note ? ` Ghi chú: ${note}` : ""}`,
+      `Chào Bia hơi Ngọc Tú, mình là ${name}. Mình muốn giữ bàn cho ${guests} người lúc ${time}, ngày ${dateFormatted}. Số liên hệ: ${phone}.${note ? ` Ghi chú: ${note}` : ""}`,
     );
     setCopied(false);
   }
@@ -27,6 +32,9 @@ export function BookingPlanner() {
     await navigator.clipboard.writeText(message);
     setCopied(true);
   }
+
+  // Zalo deep link: mở Zalo với số điện thoại + tin nhắn điền sẵn
+  const zaloLink = `${ZALO_URL}?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="booking-panel">
@@ -55,19 +63,28 @@ export function BookingPlanner() {
           Nhắn thêm cho quán
           <textarea name="note" rows={4} placeholder="Cần bàn ngoài sân, có trẻ nhỏ, tổ chức sinh nhật..." />
         </label>
-        <button className="button button-primary booking-submit" type="submit">Tạo lời nhắn đặt bàn <span>→</span></button>
+        <button className="button button-primary booking-submit" type="submit">
+          Tạo lời nhắn đặt bàn <span>→</span>
+        </button>
       </form>
 
       {message ? (
         <div className="booking-result" aria-live="polite">
-          <p className="section-index inverse">Lời nhắn đã sẵn sàng</p>
+          <p className="section-index inverse">Lời nhắn đã sẵn sàng — gửi cho quán qua Zalo</p>
           <p>{message}</p>
-          <button className="button button-dark" type="button" onClick={copyMessage}>
-            {copied ? "Đã sao chép" : "Sao chép lời nhắn"} <span>{copied ? "✓" : "↗"}</span>
-          </button>
+          <a
+            className="button button-primary booking-submit"
+            href={zaloLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Mở Zalo &amp; Gửi ngay <span>↗</span>
+          </a>
           <div className="booking-contact-actions">
+            <button type="button" onClick={copyMessage}>
+              {copied ? "Đã sao chép ✓" : "Sao chép tin nhắn"}
+            </button>
             <a href={PHONE_URL}>Gọi {PHONE_DISPLAY}</a>
-            <a href={ZALO_URL} target="_blank" rel="noreferrer">Mở Zalo ↗</a>
           </div>
         </div>
       ) : null}
