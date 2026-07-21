@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "Bia hơi Ngọc Tú | An Khánh, Hà Nội",
     template: "%s | Bia hơi Ngọc Tú",
   },
-  description: "Website giới thiệu Bia hơi Ngọc Tú tại khu vực Nam Ngãi Cầu, An Khánh, Hà Nội.",
+  description: "Website giới thiệu Bia hơi Ngọc Tú tại cuối ngõ THPT Hoài Đức B, An Khánh, Hà Nội.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

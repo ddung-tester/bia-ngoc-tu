@@ -21,7 +21,7 @@ export default function HomePage() {
           <p className="eyebrow"><span>Bia hơi</span> Ngọc Tú • An Khánh</p>
           <h1>Bia mát rồi.<em>Tới thôi.</em></h1>
           <p className="hero-lead">Gọi thêm đĩa mồi, kéo ghế ngồi sát lại. Một buổi tối vui ở Ngọc Tú chỉ cần có thế.</p>
-          <p className="location-line"><i aria-hidden="true" /> Phố Nam Ngãi Cầu, An Khánh, Hà Nội</p>
+          <p className="location-line"><i aria-hidden="true" /> Cuối ngõ THPT Hoài Đức B, An Khánh, Hà Nội</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#dat-ban">Đặt bàn ngay <span>↓</span></a>
             <a className="text-link" href={MAP_URL} target="_blank" rel="noreferrer">Xem đường đi ↗</a>
@@ -110,7 +110,7 @@ export default function HomePage() {
         <div className="location-copy">
           <p className="section-index">05 / Tìm đến quán</p>
           <h2>Đường tới quán.<br /><em>Đã có Maps lo.</em></h2>
-          <p>Quán ở khu Nam Ngãi Cầu, An Khánh. Bấm vào điểm ghim, đi theo chỉ dẫn là tới đúng Bia hơi Ngọc Tú.</p>
+          <p>Quán ở cuối ngõ THPT Hoài Đức B, An Khánh. Bấm vào điểm ghim, đi theo chỉ dẫn là tới đúng Bia hơi Ngọc Tú.</p>
           <a className="button button-primary" href={MAP_URL} target="_blank" rel="noreferrer">Mở Google Maps <span>↗</span></a>
         </div>
       </section>

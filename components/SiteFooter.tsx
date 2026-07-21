@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div>
         <p className="footer-brand">Bia hơi <strong>Ngọc Tú</strong></p>
-        <p>Điểm gặp gỡ tại Nam Ngãi Cầu, An Khánh, Hà Nội.</p>
+        <p>Điểm gặp gỡ cuối ngõ THPT Hoài Đức B, An Khánh, Hà Nội.</p>
       </div>
       <nav aria-label="Điều hướng cuối trang">
         <Link href="/gioi-thieu">Giới thiệu</Link>

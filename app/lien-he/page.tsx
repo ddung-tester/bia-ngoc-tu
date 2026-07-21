@@ -27,7 +27,7 @@ export default function ContactPage() {
           <div className="address-card">
             <span>Địa điểm</span>
             <strong>Bia hơi Ngọc Tú</strong>
-            <p>Khu vực Phố Nam Ngãi Cầu,<br />An Khánh, Hà Nội</p>
+            <p>Cuối ngõ THPT Hoài Đức B,<br />An Khánh, Hà Nội</p>
             <small>Tọa độ điểm ghim: 20.9882557, 105.724623</small>
           </div>
           <div className="contact-actions">
