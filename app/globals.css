@@ -35,7 +35,9 @@ img { display: block; }
 .mobile-menu > div { position: absolute; right: 0; top: 52px; width: 230px; display: grid; padding: 12px; background: var(--ink); border: 1px solid var(--line); box-shadow: 8px 8px 0 var(--orange); }
 .mobile-menu a { padding: 13px; font-family: var(--font-display); text-transform: uppercase; border-bottom: 1px solid var(--line); }
 
-.home-hero, .page-hero { position: relative; overflow: hidden; }
+.home-hero, .page-hero, .hero-night-section { position: relative; overflow: hidden; }
+.hero-night-section { height: clamp(480px, 70vh, 900px); }
+.hero-night-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,9,8,.55) 0%, transparent 25%, transparent 75%, rgba(8,9,8,.7) 100%); }
 .home-hero { min-height: 900px; display: flex; align-items: center; padding: 145px clamp(24px, 6vw, 100px) 95px; }
 .home-hero-image, .page-hero-image { object-fit: cover; }
 .home-hero-image { object-position: 58% center; }
@@ -82,7 +84,7 @@ h1, h2, h3 { font-family: var(--font-display), Impact, sans-serif; }
 .feature-copy h2 { margin: 0; font-size: clamp(68px, 7vw, 110px); line-height: 1.02; text-transform: uppercase; }
 .feature-copy p:not(.section-index) { margin: 32px 0 38px; font-size: 17px; line-height: 1.8; }
 
-#thuc-don, #dat-ban { scroll-margin-top: 88px; }
+#home, #gioi-thieu, #khong-gian, #thuc-don, #dat-ban, #lien-he { scroll-margin-top: 88px; }
 .landing-menu { background: var(--panel); }
 .landing-section-heading { display: grid; grid-template-columns: 1.15fr .65fr; gap: clamp(55px, 9vw, 150px); align-items: end; margin-bottom: 60px; }
 .landing-section-heading h2, .landing-booking-copy h2 { margin: 0; font-size: clamp(62px, 7.2vw, 112px); line-height: 1.0; text-transform: uppercase; letter-spacing: -.025em; }

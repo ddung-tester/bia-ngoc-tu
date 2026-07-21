@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { BookingPlanner } from "@/components/BookingPlanner";
 import { MenuGrid } from "@/components/MenuGrid";
 import { MAP_EMBED_URL, MAP_URL, PHONE_DISPLAY, PHONE_URL, ZALO_URL } from "@/components/SiteHeader";
@@ -7,7 +6,7 @@ import { MAP_EMBED_URL, MAP_URL, PHONE_DISPLAY, PHONE_URL, ZALO_URL } from "@/co
 export default function HomePage() {
   return (
     <>
-      <section className="home-hero">
+      <section className="home-hero" id="home">
         <Image
           className="home-hero-image"
           src="/images/background-hero.webp"
@@ -23,18 +22,29 @@ export default function HomePage() {
           <p className="hero-lead">Gọi thêm đĩa mồi, kéo ghế ngồi sát lại. Một buổi tối vui ở Ngọc Tú chỉ cần có thế.</p>
           <p className="location-line"><i aria-hidden="true" /> Phố Nam Ngãi Cầu, An Khánh, Hà Nội</p>
           <div className="hero-actions">
-            <Link className="button button-primary" href="#dat-ban">Đặt bàn ngay <span>↓</span></Link>
+            <a className="button button-primary" href="#dat-ban">Đặt bàn ngay <span>↓</span></a>
             <a className="text-link" href={MAP_URL} target="_blank" rel="noreferrer">Xem đường đi ↗</a>
           </div>
         </div>
         <div className="image-note">Ảnh không gian mới • Bia hơi Ngọc Tú</div>
       </section>
 
+      <section className="hero-night-section" aria-hidden="true">
+        <Image
+          src="/images/hero-night.webp"
+          alt="Không gian đêm tại Bia hơi Ngọc Tú"
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center" }}
+        />
+        <div className="hero-night-overlay" />
+      </section>
+
       <section className="marquee" aria-label="Đặc trưng không gian">
         <div><span>Bia mát</span><b>•</b><span>Mồi nóng</span><b>•</b><span>Bàn rộng</span><b>•</b><span>Chuyện dài</span><b>•</b></div>
       </section>
 
-      <section className="home-intro content-pad">
+      <section className="home-intro content-pad" id="gioi-thieu">
         <div>
           <p className="section-index">01 / Giới thiệu</p>
           <h2>Ngồi ngoài sân.<br /><em>Gió mát hơn.</em></h2>
@@ -47,7 +57,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="feature-split">
+      <section className="feature-split" id="khong-gian">
         <div className="feature-image-wrap">
           <Image src="/images/mon-ngon-v3.webp" alt="Bàn món nhậu và bia mát tại Bia hơi Ngọc Tú" fill sizes="(max-width: 850px) 100vw, 58vw" />
         </div>
@@ -86,7 +96,7 @@ export default function HomePage() {
         <BookingPlanner />
       </section>
 
-      <section className="home-location content-pad">
+      <section className="home-location content-pad" id="lien-he">
         <div className="real-map-wrap">
           <iframe
             src={MAP_EMBED_URL}

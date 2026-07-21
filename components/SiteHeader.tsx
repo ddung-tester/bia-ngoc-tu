@@ -7,12 +7,12 @@ export const PHONE_URL = "tel:+84911721113";
 export const ZALO_URL = "https://zalo.me/0911721113";
 
 const links = [
-  { href: "/", label: "Trang chủ" },
-  { href: "/gioi-thieu", label: "Giới thiệu" },
-  { href: "/khong-gian", label: "Không gian" },
-  { href: "/#thuc-don", label: "Thực đơn" },
-  { href: "/#dat-ban", label: "Đặt bàn" },
-  { href: "/lien-he", label: "Liên hệ" },
+  { href: "#home", label: "Trang chủ" },
+  { href: "#gioi-thieu", label: "Giới thiệu" },
+  { href: "#khong-gian", label: "Không gian" },
+  { href: "#thuc-don", label: "Thực đơn" },
+  { href: "#dat-ban", label: "Đặt bàn" },
+  { href: "#lien-he", label: "Liên hệ" },
 ] as const;
 
 export function SiteHeader() {
@@ -25,19 +25,19 @@ export function SiteHeader() {
 
       <nav className="desktop-nav" aria-label="Điều hướng chính">
         {links.map((link) => (
-          <Link key={link.href} href={link.href}>{link.label}</Link>
+          <a key={link.href} href={link.href}>{link.label}</a>
         ))}
       </nav>
 
-      <Link className="header-map" href="/#dat-ban">
+      <a className="header-map" href="#dat-ban">
         Đặt bàn <span aria-hidden="true">→</span>
-      </Link>
+      </a>
 
       <details className="mobile-menu">
         <summary>Menu</summary>
         <div>
           {links.map((link) => (
-            <Link key={link.href} href={link.href}>{link.label}</Link>
+            <a key={link.href} href={link.href}>{link.label}</a>
           ))}
           <a href={MAP_URL} target="_blank" rel="noreferrer">Mở Google Maps ↗</a>
         </div>
