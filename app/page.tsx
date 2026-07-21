@@ -30,17 +30,6 @@ export default function HomePage() {
         <div className="image-note">Ảnh không gian mới • Bia hơi Ngọc Tú</div>
       </section>
 
-      <section className="hero-night-section" aria-hidden="true">
-        <Image
-          src="/images/hero-night.webp"
-          alt="Không gian đêm tại Bia hơi Ngọc Tú"
-          fill
-          sizes="100vw"
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
-        <div className="hero-night-overlay" />
-      </section>
-
       <section className="marquee" aria-label="Đặc trưng không gian">
         <div><span>Bia mát</span><b>•</b><span>Mồi nóng</span><b>•</b><span>Bàn rộng</span><b>•</b><span>Chuyện dài</span><b>•</b></div>
       </section>

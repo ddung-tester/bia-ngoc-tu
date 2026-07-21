@@ -35,9 +35,7 @@ img { display: block; }
 .mobile-menu > div { position: absolute; right: 0; top: 52px; width: 230px; display: grid; padding: 12px; background: var(--ink); border: 1px solid var(--line); box-shadow: 8px 8px 0 var(--orange); }
 .mobile-menu a { padding: 13px; font-family: var(--font-display); text-transform: uppercase; border-bottom: 1px solid var(--line); }
 
-.home-hero, .page-hero, .hero-night-section { position: relative; overflow: hidden; }
-.hero-night-section { height: clamp(480px, 70vh, 900px); }
-.hero-night-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,9,8,.55) 0%, transparent 25%, transparent 75%, rgba(8,9,8,.7) 100%); }
+.home-hero, .page-hero { position: relative; overflow: hidden; }
 .home-hero { min-height: 900px; display: flex; align-items: center; padding: 145px clamp(24px, 6vw, 100px) 95px; }
 .home-hero-image, .page-hero-image { object-fit: cover; }
 .home-hero-image { object-position: 58% center; }
