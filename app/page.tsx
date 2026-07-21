@@ -10,8 +10,8 @@ export default function HomePage() {
       <section className="home-hero">
         <Image
           className="home-hero-image"
-          src="/images/hero-ngoc-tu-v3.webp"
-          alt="Hai cốc bia mát trên bàn tại Bia hơi Ngọc Tú"
+          src="/images/background-hero.webp"
+          alt="Không gian Bia hơi Ngọc Tú buổi tối"
           fill
           priority
           sizes="100vw"
