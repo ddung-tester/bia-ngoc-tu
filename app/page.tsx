@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BookingPlanner } from "@/components/BookingPlanner";
 import { MenuGrid } from "@/components/MenuGrid";
 import { MAP_EMBED_URL, MAP_URL, PHONE_DISPLAY, PHONE_URL, ZALO_URL } from "@/components/SiteHeader";
