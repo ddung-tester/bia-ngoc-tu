@@ -15,7 +15,7 @@ export default function ContactPage() {
         eyebrow="Vị trí"
         title="Hẹn nhau"
         accent="ở Ngọc Tú."
-        description="Hẹn được người rồi thì chỉ còn việc tới quán. Mở đúng điểm ghim dưới đây là tới Ngọc Tú."
+        description="Hội đã gọi đủ, câu chuyện đã sẵn sàng. Chỉ cần mở điểm ghim và để con đường dẫn mình tới một bàn bia mát."
         image="/images/cau-chuyen-v3.webp"
         imageAlt="Lối vào Bia hơi Ngọc Tú khi trời chạng vạng"
       />
@@ -23,7 +23,7 @@ export default function ContactPage() {
       <section className="contact-grid content-pad">
         <div className="contact-copy">
           <p className="section-index">01 / Chỉ đường</p>
-          <h2>Đã lên kèo.<br /><em>Đi thôi.</em></h2>
+          <h2>Hội mình đủ rồi.<br /><em>Tới Ngọc Tú thôi.</em></h2>
           <div className="address-card">
             <span>Địa điểm</span>
             <strong>Bia hơi Ngọc Tú</strong>
@@ -44,13 +44,13 @@ export default function ContactPage() {
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
           />
-          <a href={MAP_URL} target="_blank" rel="noreferrer">Mở chỉ đường trên Google Maps ↗</a>
+          <a href={MAP_URL} target="_blank" rel="noreferrer">Theo đường tới cuộc vui ↗</a>
         </div>
       </section>
 
       <section className="contact-note content-pad">
-        <p><strong>Muốn giữ bàn trước?</strong> Gọi hoặc nhắn Zalo số {PHONE_DISPLAY}. Bạn cũng có thể sang trang Đặt bàn để chuẩn bị sẵn tên, giờ tới và số người.</p>
-        <Link className="button button-dark" href="/dat-ban">Đặt bàn <span>→</span></Link>
+        <p><strong>Để Ngọc Tú chừa sẵn một bàn nhé?</strong> Gọi hoặc nhắn Zalo số {PHONE_DISPLAY}. Chỉ vài phút hẹn trước để khi cả hội tới là có thể ngồi gần nhau ngay.</p>
+        <Link className="button button-dark" href="/dat-ban">Giữ bàn cho hội <span>→</span></Link>
       </section>
     </>
   );
