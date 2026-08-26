@@ -19,15 +19,15 @@ export default function HomePage() {
         <div className="home-hero-overlay" />
         <div className="home-hero-copy">
           <p className="eyebrow"><span>Bia hơi</span> Ngọc Tú • An Khánh</p>
-          <h1>Bia mát rồi.<em>Tới thôi.</em></h1>
-          <p className="hero-lead">Gọi thêm đĩa mồi, kéo ghế ngồi sát lại. Một buổi tối vui ở Ngọc Tú chỉ cần có thế.</p>
+          <h1>Bia đã mát.<em>Hội mình tới thôi.</em></h1>
+          <p className="hero-lead">Kéo ghế lại gần, gọi thêm đĩa mồi, nâng một cốc bia mát. Chuyện vui tối nay cứ để Ngọc Tú giữ nhịp.</p>
           <p className="location-line"><i aria-hidden="true" /> Cuối ngõ THPT Hoài Đức B, An Khánh, Hà Nội</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#dat-ban">Đặt bàn ngay <span>↓</span></a>
             <a className="text-link" href={MAP_URL} target="_blank" rel="noreferrer">Xem đường đi ↗</a>
           </div>
         </div>
-        <div className="image-note">Ảnh không gian mới • Bia hơi Ngọc Tú</div>
+        <div className="image-note">Một góc Ngọc Tú • Chờ hội mình tới</div>
       </section>
 
       <section className="marquee" aria-label="Đặc trưng không gian">
@@ -37,13 +37,13 @@ export default function HomePage() {
       <section className="home-intro content-pad" id="gioi-thieu">
         <div>
           <p className="section-index">01 / Giới thiệu</p>
-          <h2>Ngồi ngoài sân.<br /><em>Gió mát hơn.</em></h2>
+          <h2>Gió mát ngoài sân.<br /><em>Chuyện vui quanh bàn.</em></h2>
         </div>
         <div className="home-intro-copy">
           <p>
-            Chiều xuống, đèn bật lên, ghế vàng kín dần. Người ta ghé Ngọc Tú vì một cốc bia mát, rồi thường ngồi lâu hơn vì câu chuyện đang vui.
+            Chiều xuống, đèn vừa lên, những chiếc ghế vàng lại gần nhau hơn. Ghé Ngọc Tú vì cốc bia mát, ở lại vì câu chuyện chưa muốn dừng.
           </p>
-          <Link className="underlined-link" href="/gioi-thieu">Đọc câu chuyện quán <span>→</span></Link>
+          <Link className="underlined-link" href="/gioi-thieu">Ghé nghe chuyện Ngọc Tú <span>→</span></Link>
         </div>
       </section>
 
@@ -53,17 +53,17 @@ export default function HomePage() {
         </div>
         <div className="feature-copy">
           <p className="section-index inverse">02 / Trên bàn</p>
-          <h2>Mồi lên nóng.<br />Bia rót đầy.</h2>
-          <p>Món để cả bàn cùng gắp, bia để cả hội cùng nâng. Kèo tối nay cứ để Ngọc Tú lo chỗ ngồi.</p>
-          <Link className="button button-dark" href="/mon-ngon">Xem món ngon <span>→</span></Link>
+          <h2>Mồi vừa lên nóng.<br />Bia đã rót đầy.</h2>
+          <p>Món ngon đặt giữa bàn để cùng gắp, bia mát rót đầy để cùng nâng. Chỉ cần đủ mặt, cuộc vui tự khắc bắt đầu.</p>
+          <Link className="button button-dark" href="/mon-ngon">Chọn món cho cả hội <span>→</span></Link>
         </div>
       </section>
 
       <section className="landing-menu content-pad" id="thuc-don">
         <div className="landing-section-heading">
           <div>
-            <p className="section-index inverse">03 / Thực đơn mẫu</p>
-            <h2>Chọn món trước.<br /><em>Đến bàn sau.</em></h2>
+            <p className="section-index inverse">03 / Thực đơn</p>
+            <h2>Món ngon gọi chung.<br /><em>Niềm vui chia cùng.</em></h2>
           </div>
         </div>
         <MenuGrid />
@@ -72,8 +72,8 @@ export default function HomePage() {
       <section className="landing-booking content-pad" id="dat-ban">
         <div className="landing-booking-copy">
           <p className="section-index inverse">04 / Đặt bàn</p>
-          <h2>Chốt giờ tới.<br /><em>Ngọc Tú giữ bàn.</em></h2>
-          <p>Điền tên, số người và giờ tới. Sau đó gọi trực tiếp hoặc sao chép lời nhắn để gửi qua Zalo.</p>
+          <h2>Hẹn nhau một giờ.<br /><em>Ngọc Tú chờ cả hội.</em></h2>
+          <p>Để lại tên, số điện thoại và ngày tới. Một lời nhắn qua Zalo là cả hội đã gần nhau thêm một bước.</p>
           <div className="booking-direct-contact">
             <a href={PHONE_URL}><small>Gọi đặt bàn</small><strong>{PHONE_DISPLAY}</strong></a>
             <a href={ZALO_URL} target="_blank" rel="noreferrer"><small>Nhắn qua</small><strong>Zalo ↗</strong></a>
@@ -94,8 +94,8 @@ export default function HomePage() {
         </div>
         <div className="location-copy">
           <p className="section-index">05 / Tìm đến quán</p>
-          <h2>Đường tới quán.<br /><em>Đã có Maps lo.</em></h2>
-          <p>Quán ở cuối ngõ THPT Hoài Đức B, An Khánh. Bấm vào điểm ghim, đi theo chỉ dẫn là tới đúng Bia hơi Ngọc Tú.</p>
+          <h2>Đường tới Ngọc Tú.<br /><em>Cứ theo niềm vui.</em></h2>
+          <p>Cuối ngõ THPT Hoài Đức B, một bàn bia mát đang chờ. Mở điểm ghim, đi theo chỉ dẫn và mang theo cả hội.</p>
           <a className="button button-primary" href={MAP_URL} target="_blank" rel="noreferrer">Mở Google Maps <span>↗</span></a>
         </div>
       </section>
