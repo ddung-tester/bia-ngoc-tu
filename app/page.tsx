@@ -37,11 +37,11 @@ export default function HomePage() {
       <section className="home-intro content-pad" id="gioi-thieu">
         <div>
           <p className="section-index">01 / Giới thiệu</p>
-          <h2>Gió mát ngoài sân.<br /><em>Chuyện vui quanh bàn.</em></h2>
+          <h2>Không gian thoáng đãng.<br /><em>Chuyện vui quanh bàn.</em></h2>
         </div>
         <div className="home-intro-copy">
           <p>
-            Chiều xuống, đèn vừa lên, những chiếc ghế vàng lại gần nhau hơn. Ghé Ngọc Tú vì cốc bia mát, ở lại vì câu chuyện chưa muốn dừng.
+            Chiều xuống, ánh đèn vừa lên, những cuộc hẹn cũng bắt đầu. Ghé Ngọc Tú vì cốc bia mát, ở lại vì câu chuyện chưa muốn dừng.
           </p>
           <Link className="underlined-link" href="/gioi-thieu">Ghé nghe chuyện Ngọc Tú <span>→</span></Link>
         </div>
