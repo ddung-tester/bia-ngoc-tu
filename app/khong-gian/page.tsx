@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 };
 
 const gallery = [
-  { src: "/images/space-social.webp", alt: "Sân quán đông khách buổi tối tại Bia hơi Ngọc Tú", title: "Tối nào cũng vui", caption: "Ghế vàng kín bàn, đèn lồng sáng rực — cái không khí chỉ có ở Ngọc Tú." },
-  { src: "/images/hero-night.webp", alt: "Nhóm bạn ngồi nhậu ban đêm tại Bia hơi Ngọc Tú", title: "Hội bạn tụ về", caption: "Câu chuyện dài hơn khi sân thoáng và bia còn đầy cốc." },
-  { src: "/images/hero-ngoc-tu-v3.webp", alt: "Hai cốc bia mát trong sân quán", title: "Bia vừa rót", caption: "Cốc lạnh đặt xuống bàn, chờ người bạn đối diện nâng lên." },
-  { src: "/images/cau-chuyen-v3.webp", alt: "Lối vào quán khi chiều xuống", title: "Quán chờ khách", caption: "Khoảng sân lên đèn, bàn ghế sẵn sàng cho cuộc hẹn tối." },
-  { src: "/images/dat-ban-v3.webp", alt: "Nhóm bạn cụng bia tại quán", title: "Bàn đang vui", caption: "Câu chuyện rôm rả hơn sau một tiếng cụng cốc." },
-  { src: "/images/mon-ngon-v3.webp", alt: "Bàn món nhậu và bia hơi", title: "Mồi lên đủ bàn", caption: "Món nóng đặt giữa bàn để ai cũng tiện gắp." },
+  { src: "/images/space-social.webp", alt: "Sân quán đông khách buổi tối tại Bia hơi Ngọc Tú", title: "Đêm lên, bàn thêm vui", caption: "Ánh đèn vừa sáng, những chiếc ghế vàng đã xích lại gần nhau — một buổi gặp gỡ đáng nhớ lại bắt đầu." },
+  { src: "/images/hero-night.webp", alt: "Nhóm bạn ngồi nhậu ban đêm tại Bia hơi Ngọc Tú", title: "Đủ bạn, đủ vui", caption: "Không gian thoáng, cốc còn đầy, câu chuyện của hội mình cứ thế dài thêm." },
+  { src: "/images/hero-ngoc-tu-v3.webp", alt: "Hai cốc bia mát trong sân quán", title: "Chạm cốc thôi", caption: "Cốc bia mát vừa đặt xuống, chỉ còn chờ người đối diện cùng nâng lên." },
+  { src: "/images/cau-chuyen-v3.webp", alt: "Lối vào quán khi chiều xuống", title: "Đèn lên chờ bạn", caption: "Không gian đã lên đèn, một chiếc bàn vẫn đang chờ cuộc hẹn tối nay." },
+  { src: "/images/dat-ban-v3.webp", alt: "Nhóm bạn cụng bia tại quán", title: "Một bàn rộn tiếng cười", caption: "Một tiếng cụng cốc mở đầu, rồi cả bàn chẳng ai ngừng cười." },
+  { src: "/images/mon-ngon-v3.webp", alt: "Bàn món nhậu và bia hơi", title: "Món nóng giữa bàn", caption: "Món nóng đặt giữa bàn, để mỗi lần gắp là một lần câu chuyện thêm vui." },
 ] as const;
 
 export default function SpacePage() {
@@ -23,15 +23,15 @@ export default function SpacePage() {
         eyebrow="Bộ ảnh"
         title="Không gian"
         accent="rất Ngọc Tú."
-        description="Ghế vàng, sân xanh, đèn sáng. Mỗi góc một vẻ, nhưng đều có cái không khí rất dễ ngồi lâu."
+        description="Ghế vàng dưới ánh đèn, không gian rộng và thoáng. Góc nào cũng đủ gần gũi để ngồi xuống rồi quên mất giờ về."
         image="/images/hero-ngoc-tu-v3.webp"
         imageAlt="Hai cốc bia mát trong không gian Bia hơi Ngọc Tú"
       />
 
       <section className="gallery-intro content-pad">
         <p className="section-index">01 / Tham quan</p>
-        <h2>Một không gian.<br /><em>Nhiều góc nhìn.</em></h2>
-        <p>Bộ ảnh gồm ảnh mới bạn cung cấp và những khung cảnh AI được tạo riêng theo không khí của quán.</p>
+        <h2>Một không gian.<br /><em>Muôn chuyện vui.</em></h2>
+        <p>Ngắm một vòng Ngọc Tú — từ những góc yên bình ban ngày đến khi đèn lên và những chiếc bàn bắt đầu rộn tiếng cười.</p>
       </section>
 
       <section className="gallery-grid content-pad">
