@@ -65,10 +65,6 @@ export default function HomePage() {
             <p className="section-index inverse">03 / Thực đơn mẫu</p>
             <h2>Chọn món trước.<br /><em>Đến bàn sau.</em></h2>
           </div>
-          <div>
-            <p>Menu dưới đây là món và giá mẫu dành cho quán bia Việt Nam. Bạn có thể thay tên món, giá và ảnh bất cứ lúc nào.</p>
-            <span className="sample-badge">Menu mẫu • Chưa phải giá bán chính thức</span>
-          </div>
         </div>
         <MenuGrid />
       </section>
