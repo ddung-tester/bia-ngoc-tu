@@ -16,7 +16,7 @@ export default function FoodPage() {
         eyebrow="Món ngon"
         title="Mồi lên nóng."
         accent="Bia rót đầy."
-        description="Một bàn ngon không cần cầu kỳ: có món để gắp chung, có bia mát và có đủ người mình muốn gặp."
+        description="Một bàn ngon chẳng cần cầu kỳ: món nóng để cùng gắp, bia mát để cùng nâng và quanh bàn là những người mình muốn gặp."
         image="/images/mon-ngon-v3.webp"
         imageAlt="Bàn món nhậu nóng và bia mát tại Bia hơi Ngọc Tú"
       />
@@ -24,10 +24,10 @@ export default function FoodPage() {
       <section className="food-intro content-pad">
         <div>
           <p className="section-index">01 / Gọi cho cả bàn</p>
-          <h2>Ăn cùng nhau.<br /><em>Vui lâu hơn.</em></h2>
+          <h2>Gắp chung một món.<br /><em>Kể thêm một chuyện.</em></h2>
         </div>
         <div>
-          <p className="food-lead">Mỗi người thích một món, nhưng ngon nhất vẫn là mấy đĩa đặt giữa bàn để cả hội cùng gắp.</p>
+          <p className="food-lead">Mỗi người một khẩu vị, nhưng món ngon nhất vẫn là món đặt giữa bàn — để cả hội cùng gắp, cùng mời và cùng cười.</p>
         </div>
       </section>
 
@@ -41,9 +41,9 @@ export default function FoodPage() {
         </div>
         <div className="food-feature-copy">
           <p className="section-index inverse">02 / Hẹn bàn</p>
-          <h2>Bàn có thể thiếu món.<br />Đừng thiếu người.</h2>
-          <p>Chốt số người và giờ tới trước, phần còn lại cứ để cuộc vui tự nhiên bắt đầu.</p>
-          <Link className="button button-primary" href="/#dat-ban">Đặt bàn cho hội <span>→</span></Link>
+          <h2>Món có thể gọi thêm.<br />Bạn bè phải gọi đủ.</h2>
+          <p>Gọi đủ người mình quý, chọn một ngày gặp nhau. Khi cốc bia đầu tiên được nâng lên, cuộc vui sẽ tự biết cách bắt đầu.</p>
+          <Link className="button button-primary" href="/#dat-ban">Gọi hội mình tới <span>→</span></Link>
         </div>
       </section>
     </>
