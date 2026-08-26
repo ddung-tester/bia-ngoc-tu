@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div>
         <p className="footer-brand">Bia hơi <strong>Ngọc Tú</strong></p>
-        <p>Điểm gặp gỡ cuối ngõ THPT Hoài Đức B, An Khánh, Hà Nội.</p>
+        <p>Một khoảng sân mát, một bàn bia vui — cuối ngõ THPT Hoài Đức B, An Khánh, Hà Nội.</p>
       </div>
       <nav aria-label="Điều hướng cuối trang">
         <Link href="/gioi-thieu">Giới thiệu</Link>
@@ -16,7 +16,7 @@ export function SiteFooter() {
         <Link href="/lien-he">Liên hệ</Link>
       </nav>
       <a className="footer-map" href={PHONE_URL}>
-        Đặt bàn: {PHONE_DISPLAY}
+        Gọi hội, giữ bàn: {PHONE_DISPLAY}
       </a>
     </footer>
   );
