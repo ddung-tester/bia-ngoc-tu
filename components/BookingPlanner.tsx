@@ -16,7 +16,7 @@ export function BookingPlanner() {
       ? new Date(date).toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit", year: "numeric" })
       : "";
 
-    const message = `Chào Bia hơi Ngọc Tú, mình là ${name}. Mình muốn đặt bàn ngày ${dateFormatted}. Số liên hệ: ${phone}.${note ? ` Ghi chú: ${note}` : ""}`;
+    const message = `Chào Bia hơi Ngọc Tú, mình là ${name}. Hội mình muốn ghé quán vào ngày ${dateFormatted}. Quán liên hệ mình qua số ${phone} nhé.${note ? ` Nhắn thêm với quán: ${note}` : ""}`;
 
     window.open(`${ZALO_URL}?text=${encodeURIComponent(message)}`, "_blank", "noreferrer");
   }
@@ -25,23 +25,23 @@ export function BookingPlanner() {
     <div className="booking-panel">
       <form className="booking-form" onSubmit={openZalo}>
         <label>
-          Tên người đặt
+          Tên người hẹn cả hội
           <input name="name" placeholder="Ví dụ: Anh Minh" required />
         </label>
         <label>
           Số điện thoại
-          <input name="phone" type="tel" inputMode="tel" placeholder="Số để quán gọi lại" required />
+          <input name="phone" type="tel" inputMode="tel" placeholder="Số để Ngọc Tú giữ liên lạc" required />
         </label>
         <label>
-          Ngày tới
+          Ngày hội mình gặp nhau
           <input name="date" type="date" required />
         </label>
         <label className="booking-note-field">
-          Nhắn thêm cho quán
-          <textarea name="note" rows={3} placeholder="Cần bàn ngoài sân, có trẻ nhỏ, tổ chức sinh nhật..." />
+          Có gì muốn nhắn riêng?
+          <textarea name="note" rows={3} placeholder="Muốn ngồi ngoài sân, có trẻ nhỏ, tổ chức sinh nhật..." />
         </label>
         <button className="button button-primary booking-submit" type="submit">
-          Đặt bàn qua Zalo <span>↗</span>
+          Gửi lời hẹn qua Zalo <span>↗</span>
         </button>
       </form>
     </div>
