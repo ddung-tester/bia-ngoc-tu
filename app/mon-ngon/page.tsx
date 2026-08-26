@@ -28,12 +28,10 @@ export default function FoodPage() {
         </div>
         <div>
           <p className="food-lead">Mỗi người thích một món, nhưng ngon nhất vẫn là mấy đĩa đặt giữa bàn để cả hội cùng gắp.</p>
-          <p>Thực đơn và giá chính thức đang chờ quán xác nhận. Phần dưới là cách gợi ý gọi món cho một bàn bia, không phải danh sách món bán cố định.</p>
         </div>
       </section>
 
       <section className="menu-page-grid content-pad">
-        <div className="sample-badge">Menu và giá mẫu • Có thể chỉnh sửa sau</div>
         <MenuGrid />
       </section>
 
